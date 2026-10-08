@@ -1,156 +1,181 @@
-/* =========================================
-MOBILE NAVIGATION
-========================================= */
+javascript
+// =========================
+// MOBILE NAVIGATION
+// =========================
 
 const menuToggle = document.getElementById("menuToggle");
-const navbar = document.getElementById("navbar");
+const navigation = document.getElementById("navigation");
 
-if (menuToggle && navbar) {
+if (menuToggle && navigation) {
 
-    ```
-menuToggle.addEventListener("click", () => {
+    menuToggle.addEventListener("click", () => {
 
-    navbar.classList.toggle("active");
+        navigation.classList.toggle("active");
 
-    const isOpen = navbar.classList.contains("active");
+        const isOpen = navigation.classList.contains("active");
 
-    menuToggle.setAttribute(
-        "aria-label",
-        isOpen ? "Close navigation menu" : "Open navigation menu"
-    );
+        menuToggle.setAttribute("aria-expanded", isOpen);
 
-});
-
-
-const navLinks = navbar.querySelectorAll("a");
-
-navLinks.forEach((link) => {
-
-    link.addEventListener("click", () => {
-
-        navbar.classList.remove("active");
-
-        menuToggle.setAttribute(
-            "aria-label",
-            "Open navigation menu"
-        );
+        menuToggle.textContent = isOpen ? "✕" : "☰";
 
     });
 
-});
-```
+
+    // Close menu after clicking a link
+
+    const navigationLinks =
+        navigation.querySelectorAll("a");
+
+    navigationLinks.forEach((link) => {
+
+        link.addEventListener("click", () => {
+
+            navigation.classList.remove("active");
+
+            menuToggle.setAttribute(
+                "aria-expanded",
+                "false"
+            );
+
+            menuToggle.textContent = "☰";
+
+        });
+
+    });
 
 }
 
-/* =========================================
-CONTACT FORM
-========================================= */
 
-const contactForm = document.getElementById("contactForm");
-const formMessage = document.getElementById("formMessage");
+// =========================
+// CONTACT FORM
+// =========================
+
+const contactForm =
+    document.getElementById("contactForm");
+
+const formMessage =
+    document.getElementById("formMessage");
+
 
 if (contactForm && formMessage) {
 
-    ```
-contactForm.addEventListener("submit", (event) => {
+    contactForm.addEventListener("submit", (event) => {
 
-    event.preventDefault();
+        event.preventDefault();
 
-    const name = document
-        .getElementById("name")
-        .value
-        .trim();
+        const name =
+            document.getElementById("name").value.trim();
 
-    const email = document
-        .getElementById("email")
-        .value
-        .trim();
+        const email =
+            document.getElementById("email").value.trim();
 
-    const message = document
-        .getElementById("message")
-        .value
-        .trim();
+        const message =
+            document.getElementById("message").value.trim();
 
 
-    if (!name || !email || !message) {
+        // Check empty fields
+
+        if (!name || !email || !message) {
+
+            formMessage.textContent =
+                "Please complete all fields.";
+
+            formMessage.style.color =
+                "#ff6b6b";
+
+            return;
+        }
+
+
+        // Simple email validation
+
+        const emailPattern =
+            /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+        if (!emailPattern.test(email)) {
+
+            formMessage.textContent =
+                "Please enter a valid email address.";
+
+            formMessage.style.color =
+                "#ff6b6b";
+
+            return;
+        }
+
+
+        // Success message
 
         formMessage.textContent =
-            "Please complete all fields.";
+            `Thank you, ${name}. Your message has been received.`;
 
-        formMessage.style.color = "#fca5a5";
-
-        return;
-    }
+        formMessage.style.color =
+            "#4ade80";
 
 
-    formMessage.textContent =
-        `Thank you, ${ name }. Your message has been received.`;
+        // Clear form
 
-    formMessage.style.color = "#86efac";
-
-
-    contactForm.reset();
-
-});
-```
-
-}
-
-/* =========================================
-SCROLL REVEAL
-========================================= */
-
-const revealElements = document.querySelectorAll(
-    ".section-heading, .about-card, .service-card, .feature, .project-card, .testimonial, .contact-box"
-);
-
-const revealObserver = new IntersectionObserver(
-    (entries) => {
-
-        ```
-    entries.forEach((entry) => {
-
-        if (entry.isIntersecting) {
-
-            entry.target.classList.add("reveal-visible");
-
-            revealObserver.unobserve(entry.target);
-
-        }
+        contactForm.reset();
 
     });
 
-},
-{
-    threshold: 0.12
 }
-```
 
-);
 
-revealElements.forEach((element) => {
+// =========================
+// CLOSE MOBILE MENU
+// WHEN CLICKING OUTSIDE
+// =========================
 
-    ```
-element.classList.add("reveal");
+document.addEventListener("click", (event) => {
 
-revealObserver.observe(element);
-```
+    if (!navigation || !menuToggle) {
+        return;
+    }
+
+    const clickedInsideMenu =
+        navigation.contains(event.target);
+
+    const clickedButton =
+        menuToggle.contains(event.target);
+
+
+    if (
+        !clickedInsideMenu &&
+        !clickedButton &&
+        navigation.classList.contains("active")
+    ) {
+
+        navigation.classList.remove("active");
+
+        menuToggle.setAttribute(
+            "aria-expanded",
+            "false"
+        );
+
+        menuToggle.textContent = "☰";
+
+    }
 
 });
 
-/* =========================================
-CURRENT YEAR
-========================================= */
 
-const copyright = document.querySelector(".copyright");
+// =========================
+// CURRENT YEAR
+// =========================
+
+const copyright =
+    document.querySelector(".copyright");
 
 if (copyright) {
 
-    ```
-const currentYear = new Date().getFullYear();
+    const currentYear =
+        new Date().getFullYear();
 
-copyright.textContent =
-    `© ${ currentYear } NexaCore IT.Demo project for portfolio purposes.`;
-```
+    copyright.textContent =
+        `© ${currentYear} NexaCore IT. Demo project for portfolio purposes.`;
 
 }
+
+
+احفظ بـ
