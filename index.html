@@ -1,51 +1,60 @@
+```html
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
 
-    ```
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
-    <meta name="description"
-        content="NexaCore IT provides modern IT solutions, web development, cloud services, and technical support for growing businesses.">
+    <meta
+        name="description"
+        content="NexaCore IT - Modern IT solutions and digital services."
+    >
 
-    <title>NexaCore IT | Technology Solutions</title>
+    <title>NexaCore IT | Digital Solutions</title>
 
     <link rel="stylesheet" href="style.css">
-    ```
-
 </head>
 
 <body>
 
-    ```
     <!-- =========================
-     HEADER
-========================== -->
+         HEADER
+    ========================== -->
 
     <header class="header">
 
-        <div class="container header-container">
+        <div class="container nav-container">
 
-            <a href="#" class="logo">
+            <a href="#home" class="logo">
                 Nexa<span>Core</span>
             </a>
 
-            <nav class="navbar" id="navbar">
+            <button
+                class="menu-toggle"
+                id="menuToggle"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+            >
+                ☰
+            </button>
+
+            <nav class="navigation" id="navigation">
 
                 <a href="#home">Home</a>
+
                 <a href="#about">About</a>
+
                 <a href="#services">Services</a>
+
                 <a href="#projects">Projects</a>
+
                 <a href="#contact">Contact</a>
 
             </nav>
-
-            <button class="menu-toggle" id="menuToggle" aria-label="Open navigation menu">
-                ☰
-            </button>
 
         </div>
 
@@ -55,63 +64,118 @@
     <main>
 
         <!-- =========================
-         HERO
-    ========================== -->
+             HERO
+        ========================== -->
 
         <section class="hero" id="home">
 
-            <div class="container hero-content">
+            <div class="container hero-container">
 
-                <div class="hero-text">
+                <div class="hero-content">
 
-                    <p class="eyebrow">
+                    <div class="hero-badge">
                         IT SOLUTIONS FOR MODERN BUSINESSES
-                    </p>
+                    </div>
 
                     <h1>
-                        Technology that helps your
-                        <span>business grow.</span>
+                        Build your business
+                        <span>with technology.</span>
                     </h1>
 
-                    <p class="hero-description">
-                        We build reliable digital solutions, modern websites,
-                        and smart technology services designed to help
-                        businesses work better and grow faster.
+                    <p>
+                        We create modern digital experiences,
+                        websites, and IT solutions designed to
+                        help businesses grow and operate better.
                     </p>
 
                     <div class="hero-buttons">
 
-                        <a href="#services" class="btn btn-primary">
+                        <a
+                            href="#services"
+                            class="btn btn-primary"
+                        >
                             Explore Services
                         </a>
 
-                        <a href="#contact" class="btn btn-secondary">
+                        <a
+                            href="#contact"
+                            class="btn btn-outline"
+                        >
                             Contact Us
                         </a>
+
+                    </div>
+
+                    <div class="hero-stats">
+
+                        <div>
+                            <strong>24/7</strong>
+                            <span>Support</span>
+                        </div>
+
+                        <div>
+                            <strong>100%</strong>
+                            <span>Responsive</span>
+                        </div>
+
+                        <div>
+                            <strong>Fast</strong>
+                            <span>Solutions</span>
+                        </div>
 
                     </div>
 
                 </div>
 
 
-                <div class="hero-card">
+                <div class="hero-visual">
 
-                    <div class="hero-card-icon">
-                        ◈
-                    </div>
+                    <div class="dashboard-card">
 
-                    <h3>
-                        Digital Solutions
-                    </h3>
+                        <div class="dashboard-top">
 
-                    <p>
-                        Web development, IT infrastructure,
-                        cloud solutions and technical support.
-                    </p>
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
 
-                    <div class="hero-status">
-                        <span></span>
-                        Available for new projects
+                        </div>
+
+                        <div class="dashboard-title">
+                            <span>System Status</span>
+                            <strong>ONLINE</strong>
+                        </div>
+
+                        <div class="dashboard-line">
+                            <span></span>
+                        </div>
+
+                        <div class="dashboard-grid">
+
+                            <div class="mini-card">
+                                <small>Performance</small>
+                                <strong>98%</strong>
+                            </div>
+
+                            <div class="mini-card">
+                                <small>Security</small>
+                                <strong>99%</strong>
+                            </div>
+
+                            <div class="mini-card wide">
+                                <small>Network</small>
+
+                                <div class="network-bar">
+                                    <i></i>
+                                    <i></i>
+                                    <i></i>
+                                    <i></i>
+                                    <i></i>
+                                </div>
+
+                            </div>
+
+                        </div>
+
                     </div>
 
                 </div>
@@ -122,8 +186,8 @@
 
 
         <!-- =========================
-         ABOUT
-    ========================== -->
+             ABOUT
+        ========================== -->
 
         <section class="section" id="about">
 
@@ -131,62 +195,122 @@
 
                 <div class="section-heading">
 
-                    <p class="section-label">
-                        ABOUT US
-                    </p>
+                    <span>ABOUT NEXACORE</span>
 
                     <h2>
-                        Technology built around your business.
+                        Technology that works
+                        for your business.
                     </h2>
 
                     <p>
-                        NexaCore IT helps small and growing businesses
-                        use technology in a simpler and more effective way.
+                        We focus on practical technology solutions
+                        that are simple, modern, and easy to use.
                     </p>
 
                 </div>
 
 
-                <div class="about-grid">
+                <div class="about-layout">
 
-                    <div class="about-card">
+                    <div class="about-main">
 
                         <h3>
-                            Practical Solutions
+                            We turn ideas into digital experiences.
                         </h3>
 
                         <p>
-                            We focus on useful technology solutions
-                            that solve real business problems.
+                            NexaCore is a fictional IT company created
+                            as a front-end portfolio project.
+                            The website demonstrates how a modern
+                            technology company can present its
+                            services, projects, and solutions online.
                         </p>
+
+                        <p>
+                            Our approach combines clean design,
+                            responsive development, and user-friendly
+                            interfaces.
+                        </p>
+
+                        <a href="#contact" class="text-link">
+                            Start a project →
+                        </a>
 
                     </div>
 
 
-                    <div class="about-card">
+                    <div class="about-cards">
 
-                        <h3>
-                            Modern Approach
-                        </h3>
+                        <div class="info-card">
 
-                        <p>
-                            Our solutions are designed with modern
-                            technologies and user experience in mind.
-                        </p>
+                            <div class="card-number">
+                                01
+                            </div>
 
-                    </div>
+                            <h3>
+                                Modern Design
+                            </h3>
+
+                            <p>
+                                Clean interfaces designed for
+                                modern businesses.
+                            </p>
+
+                        </div>
 
 
-                    <div class="about-card">
+                        <div class="info-card">
 
-                        <h3>
-                            Reliable Support
-                        </h3>
+                            <div class="card-number">
+                                02
+                            </div>
 
-                        <p>
-                            We provide clear technical support and
-                            maintainable solutions for our clients.
-                        </p>
+                            <h3>
+                                Responsive
+                            </h3>
+
+                            <p>
+                                Designed to work across all
+                                screen sizes.
+                            </p>
+
+                        </div>
+
+
+                        <div class="info-card">
+
+                            <div class="card-number">
+                                03
+                            </div>
+
+                            <h3>
+                                Reliable
+                            </h3>
+
+                            <p>
+                                Organized code and practical
+                                digital solutions.
+                            </p>
+
+                        </div>
+
+
+                        <div class="info-card">
+
+                            <div class="card-number">
+                                04
+                            </div>
+
+                            <h3>
+                                User Focused
+                            </h3>
+
+                            <p>
+                                Simple experiences that are easy
+                                for users to understand.
+                            </p>
+
+                        </div>
 
                     </div>
 
@@ -198,26 +322,25 @@
 
 
         <!-- =========================
-         SERVICES
-    ========================== -->
+             SERVICES
+        ========================== -->
 
-        <section class="section section-alt" id="services">
+        <section class="section section-dark" id="services">
 
             <div class="container">
 
                 <div class="section-heading">
 
-                    <p class="section-label">
-                        OUR SERVICES
-                    </p>
+                    <span>OUR SERVICES</span>
 
                     <h2>
-                        Technology services for growing teams.
+                        Digital solutions
+                        for growing businesses.
                     </h2>
 
                     <p>
-                        From websites to technical support,
-                        we provide practical digital services.
+                        A selection of IT and digital services
+                        designed to solve common business needs.
                     </p>
 
                 </div>
@@ -236,9 +359,13 @@
                         </h3>
 
                         <p>
-                            Modern responsive websites and web interfaces
-                            designed for desktop and mobile devices.
+                            Modern responsive websites and
+                            front-end interfaces for businesses.
                         </p>
+
+                        <a href="#contact">
+                            Learn More →
+                        </a>
 
                     </article>
 
@@ -254,9 +381,13 @@
                         </h3>
 
                         <p>
-                            Practical cloud solutions that help businesses
-                            manage their digital infrastructure.
+                            Digital infrastructure concepts and
+                            cloud-based business solutions.
                         </p>
+
+                        <a href="#contact">
+                            Learn More →
+                        </a>
 
                     </article>
 
@@ -272,9 +403,13 @@
                         </h3>
 
                         <p>
-                            Technical assistance and troubleshooting
-                            for everyday business technology.
+                            Practical technical support and
+                            solutions for everyday IT problems.
                         </p>
+
+                        <a href="#contact">
+                            Learn More →
+                        </a>
 
                     </article>
 
@@ -282,7 +417,7 @@
                     <article class="service-card">
 
                         <div class="service-icon">
-                            ◉
+                            ◈
                         </div>
 
                         <h3>
@@ -290,9 +425,13 @@
                         </h3>
 
                         <p>
-                            Basic security practices designed to help
-                            businesses protect their digital environment.
+                            Security-focused concepts for
+                            protecting modern digital systems.
                         </p>
+
+                        <a href="#contact">
+                            Learn More →
+                        </a>
 
                     </article>
 
@@ -304,81 +443,106 @@
 
 
         <!-- =========================
-         WHY US
-    ========================== -->
+             WHY US
+        ========================== -->
 
         <section class="section">
 
             <div class="container">
 
-                <div class="two-column">
+                <div class="split-section">
 
                     <div>
 
-                        <p class="section-label">
-                            WHY NEXACORE
-                        </p>
+                        <span class="section-label">
+                            WHY CHOOSE US
+                        </span>
 
                         <h2>
                             Simple technology.
-                            Better business.
+                            Powerful results.
                         </h2>
 
                         <p>
-                            We believe technology should make business
-                            easier rather than more complicated.
+                            Good technology should not be complicated.
+                            We focus on creating digital experiences
+                            that are clear, fast, and useful.
                         </p>
 
                     </div>
 
 
-                    <div class="features-list">
+                    <div class="check-list">
 
-                        <div class="feature">
-                            <strong>01</strong>
+                        <div class="check-item">
+
+                            <span>✓</span>
 
                             <div>
-                                <h3>
-                                    User-focused
-                                </h3>
+                                <strong>
+                                    Responsive by default
+                                </strong>
 
                                 <p>
-                                    Solutions designed around real users
-                                    and real business needs.
+                                    Designed for phones, tablets,
+                                    laptops, and desktop screens.
                                 </p>
                             </div>
+
                         </div>
 
 
-                        <div class="feature">
-                            <strong>02</strong>
+                        <div class="check-item">
+
+                            <span>✓</span>
 
                             <div>
-                                <h3>
-                                    Responsive
-                                </h3>
+                                <strong>
+                                    Clean structure
+                                </strong>
 
                                 <p>
-                                    Interfaces that work smoothly across
-                                    different screen sizes.
+                                    Organized layouts and maintainable
+                                    front-end code.
                                 </p>
                             </div>
+
                         </div>
 
 
-                        <div class="feature">
-                            <strong>03</strong>
+                        <div class="check-item">
+
+                            <span>✓</span>
 
                             <div>
-                                <h3>
-                                    Maintainable
-                                </h3>
+                                <strong>
+                                    User focused
+                                </strong>
 
                                 <p>
-                                    Clean and organized solutions that
-                                    are easier to maintain and improve.
+                                    Interfaces designed around
+                                    usability and clarity.
                                 </p>
                             </div>
+
+                        </div>
+
+
+                        <div class="check-item">
+
+                            <span>✓</span>
+
+                            <div>
+                                <strong>
+                                    Modern experience
+                                </strong>
+
+                                <p>
+                                    Contemporary design with smooth
+                                    interactions.
+                                </p>
+                            </div>
+
                         </div>
 
                     </div>
@@ -391,22 +555,25 @@
 
 
         <!-- =========================
-         PROJECTS
-    ========================== -->
+             PROJECTS
+        ========================== -->
 
-        <section class="section section-alt" id="projects">
+        <section class="section section-dark" id="projects">
 
             <div class="container">
 
                 <div class="section-heading">
 
-                    <p class="section-label">
-                        RECENT PROJECTS
-                    </p>
+                    <span>OUR WORK</span>
 
                     <h2>
-                        Selected digital projects.
+                        Selected projects.
                     </h2>
+
+                    <p>
+                        Demo projects created to demonstrate
+                        different types of digital experiences.
+                    </p>
 
                 </div>
 
@@ -415,24 +582,28 @@
 
                     <article class="project-card">
 
-                        <div class="project-image">
-                            Business Website
+                        <div class="project-number">
+                            01
                         </div>
 
                         <div class="project-content">
 
-                            <p class="project-category">
-                                WEB DEVELOPMENT
-                            </p>
+                            <span>
+                                BUSINESS WEBSITE
+                            </span>
 
                             <h3>
-                                Business Website
+                                Corporate IT Website
                             </h3>
 
                             <p>
-                                A responsive corporate website
-                                designed for a growing business.
+                                A modern responsive website for
+                                a technology company.
                             </p>
+
+                            <a href="#contact">
+                                View Project →
+                            </a>
 
                         </div>
 
@@ -441,24 +612,28 @@
 
                     <article class="project-card">
 
-                        <div class="project-image">
-                            Dashboard
+                        <div class="project-number">
+                            02
                         </div>
 
                         <div class="project-content">
 
-                            <p class="project-category">
-                                WEB APPLICATION
-                            </p>
+                            <span>
+                                DASHBOARD
+                            </span>
 
                             <h3>
-                                Analytics Dashboard
+                                Business Analytics
                             </h3>
 
                             <p>
-                                A modern interface for monitoring
-                                business performance and data.
+                                A clean dashboard interface for
+                                displaying business data.
                             </p>
+
+                            <a href="#contact">
+                                View Project →
+                            </a>
 
                         </div>
 
@@ -467,24 +642,28 @@
 
                     <article class="project-card">
 
-                        <div class="project-image">
-                            E-Commerce
+                        <div class="project-number">
+                            03
                         </div>
 
                         <div class="project-content">
 
-                            <p class="project-category">
+                            <span>
                                 E-COMMERCE
-                            </p>
+                            </span>
 
                             <h3>
                                 Online Store
                             </h3>
 
                             <p>
-                                A responsive product browsing and
-                                shopping experience.
+                                A responsive product showcase and
+                                e-commerce front-end.
                             </p>
+
+                            <a href="#contact">
+                                View Project →
+                            </a>
 
                         </div>
 
@@ -498,8 +677,8 @@
 
 
         <!-- =========================
-         TESTIMONIALS
-    ========================== -->
+             TESTIMONIALS
+        ========================== -->
 
         <section class="section">
 
@@ -507,24 +686,27 @@
 
                 <div class="section-heading">
 
-                    <p class="section-label">
-                        CLIENT FEEDBACK
-                    </p>
+                    <span>CLIENT FEEDBACK</span>
 
                     <h2>
-                        What our clients say.
+                        What clients say.
                     </h2>
 
                 </div>
 
 
-                <div class="testimonial-grid">
+                <div class="testimonials">
 
                     <article class="testimonial">
 
+                        <div class="quote">
+                            “
+                        </div>
+
                         <p>
-                            "The website was clean, responsive and
-                            exactly what our business needed."
+                            The website feels modern, professional,
+                            and works perfectly across different
+                            screen sizes.
                         </p>
 
                         <strong>
@@ -540,9 +722,13 @@
 
                     <article class="testimonial">
 
+                        <div class="quote">
+                            “
+                        </div>
+
                         <p>
-                            "The team understood our requirements
-                            and delivered a simple solution."
+                            The interface is simple, clean, and easy
+                            for our customers to understand.
                         </p>
 
                         <strong>
@@ -550,7 +736,7 @@
                         </strong>
 
                         <span>
-                            Marketing Manager
+                            Project Manager
                         </span>
 
                     </article>
@@ -563,18 +749,16 @@
 
 
         <!-- =========================
-         FAQ
-    ========================== -->
+             FAQ
+        ========================== -->
 
-        <section class="section section-alt">
+        <section class="section section-dark">
 
             <div class="container">
 
                 <div class="section-heading">
 
-                    <p class="section-label">
-                        FAQ
-                    </p>
+                    <span>FAQ</span>
 
                     <h2>
                         Frequently asked questions.
@@ -586,39 +770,59 @@
                 <div class="faq">
 
                     <details>
+
                         <summary>
-                            What services do you provide?
+                            Do you build responsive websites?
                         </summary>
 
                         <p>
-                            We provide web development, IT support,
-                            cloud solutions and basic cybersecurity services.
+                            Yes. The website design is built to
+                            adapt to desktop, tablet, and mobile
+                            screen sizes.
                         </p>
 
                     </details>
 
 
                     <details>
+
                         <summary>
-                            Do you work with small businesses?
+                            What technologies are used?
                         </summary>
 
                         <p>
-                            Yes. Our solutions are designed for
-                            small and growing businesses.
+                            This portfolio project uses HTML,
+                            CSS, and JavaScript.
                         </p>
 
                     </details>
 
 
                     <details>
+
                         <summary>
-                            Are your websites responsive?
+                            Can the design be customized?
                         </summary>
 
                         <p>
-                            Yes. Websites are designed to work across
-                            desktop, tablet and mobile devices.
+                            Yes. Colors, sections, content,
+                            layout, and branding can be customized
+                            according to the project requirements.
+                        </p>
+
+                    </details>
+
+
+                    <details>
+
+                        <summary>
+                            Does the contact form send real emails?
+                        </summary>
+
+                        <p>
+                            This portfolio version uses a front-end
+                            demo form. It does not send real emails
+                            or store information.
                         </p>
 
                     </details>
@@ -631,46 +835,117 @@
 
 
         <!-- =========================
-         CONTACT
-    ========================== -->
+             CONTACT
+        ========================== -->
 
-        <section class="section contact-section" id="contact">
+        <section class="section" id="contact">
 
             <div class="container">
 
-                <div class="contact-box">
+                <div class="contact-section">
 
-                    <div>
+                    <div class="contact-content">
 
-                        <p class="section-label">
+                        <span class="section-label">
                             GET IN TOUCH
-                        </p>
+                        </span>
 
                         <h2>
-                            Have a project in mind?
+                            Have a project
+                            in mind?
                         </h2>
 
                         <p>
-                            Tell us about your project and
-                            let's discuss how technology can help.
+                            Tell us about your project and let's
+                            create a digital experience that fits
+                            your business.
                         </p>
+
+                        <div class="contact-details">
+
+                            <div>
+                                <strong>Email</strong>
+                                <span>
+                                    hello@nexacore.demo
+                                </span>
+                            </div>
+
+                            <div>
+                                <strong>Availability</strong>
+                                <span>
+                                    Available for new projects
+                                </span>
+                            </div>
+
+                        </div>
 
                     </div>
 
 
-                    <form id="contactForm" class="contact-form">
+                    <form
+                        class="contact-form"
+                        id="contactForm"
+                    >
 
-                        <input type="text" id="name" placeholder="Your name" required>
+                        <div class="input-group">
 
-                        <input type="email" id="email" placeholder="Your email" required>
+                            <label for="name">
+                                Your Name
+                            </label>
 
-                        <textarea id="message" rows="5" placeholder="Tell us about your project" required></textarea>
+                            <input
+                                type="text"
+                                id="name"
+                                name="name"
+                                placeholder="Enter your name"
+                            >
 
-                        <button type="submit" class="btn btn-primary">
+                        </div>
+
+
+                        <div class="input-group">
+
+                            <label for="email">
+                                Email Address
+                            </label>
+
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="Enter your email"
+                            >
+
+                        </div>
+
+
+                        <div class="input-group">
+
+                            <label for="message">
+                                Message
+                            </label>
+
+                            <textarea
+                                id="message"
+                                name="message"
+                                rows="5"
+                                placeholder="Tell us about your project"
+                            ></textarea>
+
+                        </div>
+
+
+                        <button
+                            type="submit"
+                            class="btn btn-primary"
+                        >
                             Send Message
                         </button>
 
-                        <p id="formMessage" class="form-message"></p>
+                        <p
+                            class="form-message"
+                            id="formMessage"
+                        ></p>
 
                     </form>
 
@@ -684,8 +959,8 @@
 
 
     <!-- =========================
-     FOOTER
-========================== -->
+         FOOTER
+    ========================== -->
 
     <footer class="footer">
 
@@ -693,26 +968,15 @@
 
             <div>
 
-                <a href="#" class="logo">
+                <a href="#home" class="logo">
                     Nexa<span>Core</span>
                 </a>
 
                 <p>
-                    Technology solutions for modern businesses.
+                    Modern digital solutions for modern businesses.
                 </p>
 
             </div>
-
-
-            <div class="footer-links">
-
-                <a href="#home">Home</a>
-                <a href="#about">About</a>
-                <a href="#services">Services</a>
-                <a href="#contact">Contact</a>
-
-            </div>
-
 
             <p class="copyright">
                 © 2026 NexaCore IT. Demo project for portfolio purposes.
@@ -724,8 +988,9 @@
 
 
     <script src="script.js"></script>
-    ```
 
 </body>
-
 </html>
+```
+
+احفظ بـ
